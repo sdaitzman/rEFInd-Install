@@ -17,27 +17,16 @@ script AppDelegate
 	end applicationWillFinishLaunching_
 	
     
-    -- download rEFInd
+    -- download refind
     
     on ButtonHandlerDownload_(sender)
         do shell script "open http://sourceforge.net/projects/refind/files/latest/download?source=files"
     end ButtonHandlerDownload_
     
-    
-    -- extract rEFInd
-    
-    on ButtonHandlerExtract_(sender)
-        do shell script "find ~/Downloads -iname refind* -type d -exec rm -rf {} \\;;cd ~/Downloads;unzip refind*;rm ~/Downloads/refind*.zip"
-    end ButtonHandlerExtract_
-    
-    
-    -- standard install refind
+    -- extract and do standard install of refind
     
     on ButtonHandlerInstall_(sender)
-        tell application "Terminal"
-            activate
-            do script "cd ~/Downloads/refind*;./install.sh;clear;echo \"Install done. Feel free to quit Terminal now.\""
-        end tell
+        do shell script "find ~/Downloads -iname refind* -type d -exec rm -rf {} \\;;cd ~/Downloads;unzip refind*;rm ~/Downloads/refind*.zip;cd ~/Downloads/refind*;./install.sh;clear;echo \"Install done. Feel free to quit Terminal now.\";rm -rf ~/Downloads/refind*" with administrator privileges
     end ButtonHandlerInstall_
     
     -- open docs
