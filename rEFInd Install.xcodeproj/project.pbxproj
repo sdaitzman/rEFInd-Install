@@ -323,6 +323,7 @@
 				7E99B3EE18E767C5009A6D8A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
