@@ -2,6 +2,7 @@ rEFInd-Install
 ==============
 
 # DEPRECATED PROJECT
+# USE [ELEMENTARY OS INSTALL UTILITY](https://github.com/sdaitzman/elementary-os-install-utility) AND CLICK "INSTALL BOOT PICKER" TO INSTALL REFIND INSTEAD OF USING THIS. BETTER SUPPORT, FASTER BOOT, EDITABLE FROM OTHER OS'S, AUTO-UPDATES BOOT PICKER, AND MORE!
 
 A rEFInd (UEFI boot picker) install utility for OS X
 
